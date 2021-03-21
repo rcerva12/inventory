@@ -12,18 +12,18 @@
                 <div class="col-12 col-md-8">
                     <div class="row">
                         <div class="card-body">
-                            <form action="login" method="POST">
+                            <form action="{{ route('login') }}" method="post">
                                 @csrf
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="input-field">
-                                            <input id="username" name="username" type="text"/>
+                                            <input id="username" name="username" type="text" @error('username') class="invalid" @enderror value="{{ old('username') ?: '' }}"/>
                                             <label for="username">Username</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="input-field">
-                                            <input id="password" name="password" type="password"/>
+                                            <input id="password" name="password" type="password" @error('password') class="invalid" @enderror value="{{ old('password') ?: '' }}"/>
                                             <label for="password">Password</label>
                                         </div>
                                     </div>
