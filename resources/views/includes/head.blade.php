@@ -3,20 +3,18 @@
 <title>{{ config('app.name') }}</title>
 <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
 <link href="{{ asset('css/dataTables.bootstrap4.min.css') }}" rel="stylesheet" />
-<link href="{{ asset('css/materialize.min.css') }}" rel="stylesheet" />
 <link href="{{ asset('css/all.min.css') }}" rel="stylesheet" />
-<link href="{{ asset('css/font-maa.css') }}" rel="stylesheet" />
 <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-<script type="text/javascript" src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/all.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/numeral.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
-<style>
-/* body {
-    background-image: url("{{ asset('images/background2.jpg') }}");
-} */
-</style>
+<link href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('css/util.css') }}" rel="stylesheet" />
+<link href="{{ asset('css/main.css') }}" rel="stylesheet" />
+{{-- <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('vendor/animate/animate.css') }}" rel="stylesheet" />
+<link href="{{ asset('vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('vendor/animsition/css/animsition.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('vendor/select2/select2.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('vendor/daterangepicker/daterangepicker.css') }}" rel="stylesheet" /> --}}
+{{-- <link href="{{ asset('css/materialize.min.css') }}" rel="stylesheet" /> --}}

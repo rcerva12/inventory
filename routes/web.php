@@ -28,4 +28,7 @@ Route::get('/register', function () {
 });
 Route::post('create_user', [LoginController::class,'create_user'])->name('create_user');
 
-
+// TEST
+Route::get('/navbar', function () { 
+    return view('includes/navbar'); 
+});
