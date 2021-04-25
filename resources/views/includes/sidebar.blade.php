@@ -17,7 +17,7 @@
           </a>
           <ul class="collapse list-unstyled" id="usermaintenance">
               <li>
-                  <a href="#">User Maintenance</a>
+                  <a href="users">User Maintenance</a>
               </li>
               <li>
                   <a href="#">User Role</a>

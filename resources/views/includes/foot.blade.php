@@ -9,6 +9,9 @@
 <script type="text/javascript" src="{{ asset('js/numeral.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.validate.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/toast.min.js') }}"></script>
+{{-- <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script> --}}
 {{-- <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('vendor/jquery/jquery-3.2.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('vendor/animsition/js/animsition.min.js') }}"></script>

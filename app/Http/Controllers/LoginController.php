@@ -44,13 +44,14 @@ class LoginController extends Controller
         if ($user_check) {
             if (Hash::check($req->password, $user_check->password)) {
                 $req->session()->put('Loggedin', $user_check->id);
+                session(['UserName' => $user_check->f_name]);
                 return redirect('dashboard'); 
             } else {
-                return back()->with(session(['message' => 'Invalid Password']));
+                return back()->with(session(['message' => 'Invalid Password', 'background'  => 'bg-warning']));
             }
             
         } else {
-            return back()->with(session(['message' => 'No User found for this username']));
+            return back()->with(session(['message' => 'No User found for this username', 'background'  => 'bg-warning']));
         }
                
     }

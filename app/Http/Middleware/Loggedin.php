@@ -17,7 +17,7 @@ class Loggedin
     public function handle(Request $request, Closure $next)
     {
         if (!session()->has('Loggedin')) {
-            return redirect('/')->with(session(['message' => 'You must logged in'])); 
+            return redirect('/')->with(session(['message' => 'You must log-in first!','background' => 'bg-warning'])); 
         } 
 
         //This is requerd for middleware to work. DO NOT DELETE THIS!!!
