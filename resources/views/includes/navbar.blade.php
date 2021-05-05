@@ -69,7 +69,7 @@
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user-circle" aria-hidden="true"></i> {{ $LoggedUserInfo->f_name }}
+                        <i class="fa fa-user-circle" aria-hidden="true"></i> {{ $user->f_name }}
                         {{-- {{ session('UserName') }} --}}
                     </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

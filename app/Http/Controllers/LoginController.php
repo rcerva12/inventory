@@ -60,14 +60,14 @@ class LoginController extends Controller
     {
         if (session()->has('Loggedin')) {
             $user = User::where('id', '=', session('Loggedin'))->first();
-            $data = [
-                'LoggedUserInfo'=>$user
-            ];
+            // $data = [
+            //     'LoggedUserInfo'=>$user
+            // ];
         } else {
             # code...
         }
         
-        return view('pages.dashboard', $data);
+        return view('pages.dashboard', compact('user'));
     }
 
     public function logout ()

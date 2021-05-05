@@ -127,7 +127,25 @@
                             <div class="form-group">
                                 <label class="control-label col-md-4">Last Name : </label>
                                 <div class="col-md-8">
-                                    <input id="l_name" name="l_name" type="text"style="text-transform: capitalize;" class="form-control" @error('l_name') class="invalid" @enderror value="{{ old('l_name') ?: '' }}"/>
+                                    <input id="l_name" name="l_name" type="text" style="text-transform: capitalize;" class="form-control" @error('l_name') class="invalid" @enderror value="{{ old('l_name') ?: '' }}"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-4">Role : </label>
+                                <div class="col-md-8">
+                                    <select class="form-control" id="role" name="role" required autofocus>
+                                        <option selected>--select--</option>
+                                        @if (count($role)>0)
+                                            @foreach ($role as $roles)
+                                                <option value="{{ $roles->id }}"> {{ $roles->role_name }}</option>
+                                            @endforeach
+                                        @else
+                                            
+                                        @endif
+                                        {{-- <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option> --}}
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">

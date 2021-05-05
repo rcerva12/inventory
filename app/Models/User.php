@@ -42,4 +42,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+    public function role(){
+        return $this->hasMany('App\Models\Roles');
+    }
+
 }

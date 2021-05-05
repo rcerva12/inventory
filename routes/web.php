@@ -5,6 +5,13 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RolesController;
+use App\Http\Controllers\MaterlistController;
+
+
+// =========
+//  Testing
+// =========
 use App\Http\Controllers\TestController;
 
 
@@ -24,6 +31,8 @@ Route::middleware(['isloggedin'])->group(function() {
     Route::resource('users', '\App\Http\Controllers\UserController');
     Route::post('users/delete', [UserController::class, 'deleteUser'])->name('users_delete');
     // Route::post('user/add', [UserController::class, 'store'])->name('users_add');
+    Route::resource('roles', '\App\Http\Controllers\RolesController');
+    Route::post('roles/delete', [RolesController::class, 'deleteRole'])->name('roles_delete');
 });
 Route::get('logout',[LoginController::class,'logout']);
 
